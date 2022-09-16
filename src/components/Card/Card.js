@@ -6,7 +6,7 @@ export function Card(cardData) {
   return (
     <div key={`Card-${cardData.id}`} className={`Card`}>
       <div className="Image">
-        <img src={cardData.imageUrl} height="610px"/>
+        <img src={cardData.imageUrl} height="80%"/>
       </div>
       <div className="Name">
         {cardData?.name}

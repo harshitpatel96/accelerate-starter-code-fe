@@ -1,73 +1,76 @@
-.Table {
-  text-align:center;
-  font-size: 18px;
-  margin-top: 5px;
-  height: 20%;
-  margin-bottom: 10px;
-  align-self: center;
-  /* margin-left: 10px; */
-  color: White;
-}
-
-.Name {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: White;
-}
-
-.Text {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: White;
-}
-
-.Set {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: White;
-}
-
-.Type {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: White;
-}
-
-.Image {
-  vertical-align: middle;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 620px;
-}
-
 @media only screen and (min-width: 640px) {
   .Card {
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
-    width: 500px;
-    height: 850px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 18%;
+    height: 52%;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px gray;
     background-color:rgb(19, 79, 102);
   }
+
+  .Image {
+    vertical-align: middle;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+  }
+
+  .Name {
+    margin-top: -60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: White;
+  }
+  
+  .Text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: White;
+  }
+  
+  .Set {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: White;
+  }
+  
+  .Type {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: White;
+  }
+  
+}
+
+.Card:hover {
+  color: #ef551e;
+  box-shadow: 0px 0px 100px #ef551e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 @media only screen and (max-width: 640px) {
@@ -75,7 +78,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    margin-bottom: 5px;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px gray;
     background-color:rgb(19, 79, 102);
@@ -83,6 +88,51 @@
     justify-content: center;
   }
 
+  .Image {
+    margin-top: -50px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+  }
+  .Name {
+    margin-top: -60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+  }
+  .Text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+  }
+  .Set {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+  }
+  
+  .Type {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+  }
 }
 
 
