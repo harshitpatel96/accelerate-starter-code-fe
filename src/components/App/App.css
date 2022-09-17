@@ -3,23 +3,108 @@
   min-height: 100vh;
 }
 
+/* css for screen with width larger than 640px */
 @media only screen and (min-width: 640px) {
   .App-cardlist {
-    /* Complete the card list styles here */
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    vertical-align: baseline;
     align-items: center;
     justify-content: center;
   }
-}
-
-@media only screen and (max-width: 640px) {
-  .App-cardlist {
-    /* Complete the card list styles here */
+  .Title {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #ef551e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SearchBar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
+
+/* css for screen with width smaller than 640px */
+@media only screen and (max-width: 640px) {
+  .App-cardlist {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+    align-items: center;
+    justify-content: center;
+  }
+  .Title {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #ef551e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .SearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*css for spinner, credits: https://loading.io/ */
+.spinnerDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+  height: 50vh;
+}
+
+@keyframes ldio-c6ip4344bwh {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+.ldio-c6ip4344bwh > div > div {
+  position: absolute;
+  border-radius: 50%;
+}
+.ldio-c6ip4344bwh > div > div:nth-child(1) {
+  top: 30px;
+  left: 30px;
+  width: 140px;
+  height: 140px;
+  background: #e34600;
+}
+.ldio-c6ip4344bwh > div > div:nth-child(2) {
+  top: 39.800000000000004px;
+  left: 79px;
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  animation: ldio-c6ip4344bwh 1s linear infinite;
+  transform-origin: 21px 60.199999999999996px;
+}
+.loadingio-spinner-disk-f3bsjgekgog {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff00;
+}
+.ldio-c6ip4344bwh {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-c6ip4344bwh div { box-sizing: content-box; }
