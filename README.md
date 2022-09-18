@@ -2,24 +2,31 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Steps to run this app
 
-In the project directory, you can run:
+In order to run this project directory, you would need:
 
-### `npm start`
+1. Node version 15
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After installing Node 15, do the following steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. `cd` into project directory
+2. run the command `npm ci` to install all the necessary libraries to run this project.
+3. run `npm start` to run the project. (This will start development server on http://localhost:3000)
 
-### `npm run build`
+To run production build:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. build the project using `npm build`
+2. install serve using `npm install -g serve`
+3. run the command `serve -s build`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Note:
+
+- This project is tested on a phone browser as well as on a desktop monitor screens ranging from a screen size of 360 x 640 to 1920 x 1080.
+- It has been tested only on google chrome and mozilla firefox browsers.
+
+Credits:
+
+- Loading icon by loading.io
