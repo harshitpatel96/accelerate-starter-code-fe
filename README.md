@@ -29,4 +29,4 @@ Note:
 
 Credits:
 
-- Loading icon by loading.io
+- Loading icon by [loading.io](https://loading.io)
