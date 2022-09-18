@@ -30,13 +30,11 @@ export function App() {
       fetchPages()
     }
   }, [currPage, cards, prevPage, lastPage, searchByNameText])
-  console.log(loading)
+
   const onScroll = () => {
     // on scroll function checks if we reached end of current scroll length, if so we ask api to give us next set of 20 cards to render
-    console.log(listInnerRef)
     if (listInnerRef.current) {
       const  { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-      console.log(scrollTop + clientHeight, scrollHeight)
       if  (Math.floor(scrollTop + clientHeight) === scrollHeight || Math.ceil(scrollTop + clientHeight) === scrollHeight) {
         setCurrPage(currPage + 1)
       }
