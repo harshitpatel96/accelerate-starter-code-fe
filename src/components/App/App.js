@@ -74,7 +74,9 @@ export function App() {
         </div>
         )
       }
-      {// loading icon credits: https://loading.io/
+      {
+      // loading icon credits: https://loading.io/
+      // TODO: get the loading spinner to also run at the bottom of the page when we are fetching new cards from the api
       loading && (
         <div className="spinnerDiv">
           <div className="loadingio-spinner-disk-f3bsjgekgog"><div className="ldio-c6ip4344bwh">
